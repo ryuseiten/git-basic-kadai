@@ -1,0 +1,71 @@
+iplay@Chida_Ryusei MINGW64 ~ (main)
+$ mkdir git_challenge
+
+iplay@Chida_Ryusei MINGW64 ~ (main)
+$ ls
+ AppData/             NTUSER.DAT{8922e74a-bcf3-11ef-b691-e08e72f53822}.TxR.0.regtrans-ms                             Searches/
+'Application Data'@   NTUSER.DAT{8922e74a-bcf3-11ef-b691-e08e72f53822}.TxR.1.regtrans-ms                             SendTo@
+ Contacts/            NTUSER.DAT{8922e74a-bcf3-11ef-b691-e08e72f53822}.TxR.2.regtrans-ms                             Templates@
+ Cookies@             NTUSER.DAT{8922e74a-bcf3-11ef-b691-e08e72f53822}.TxR.blf                                       Videos/
+ Documents/           NTUSER.DAT{8922e74b-bcf3-11ef-b691-e08e72f53822}.TM.blf                                       'VirtualBox VMs'/
+ Downloads/           NTUSER.DAT{8922e74b-bcf3-11ef-b691-e08e72f53822}.TMContainer00000000000000000001.regtrans-ms   git_challenge/
+ Favorites/           NTUSER.DAT{8922e74b-bcf3-11ef-b691-e08e72f53822}.TMContainer00000000000000000002.regtrans-ms   ntuser.dat.LOG1
+ Links/               NetHood@                                                                                       ntuser.dat.LOG2
+'Local Settings'@     OneDrive/                                                                                      ntuser.ini
+ Music/               PrintHood@                                                                                    'スタート メニュー'@
+'My Documents'@       Recent@
+ NTUSER.DAT          'Saved Games'/
+
+iplay@Chida_Ryusei MINGW64 ~ (main)
+$ cd git_challenge
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git init
+Initialized empty Git repository in C:/Users/iplay/git_challenge/.git/
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ echo "Hello, world!" >> hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ ls
+hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtにHello,wordを追加"
+[main (root-commit) a062a7e] hello_world.txtにHello,wordを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界!"　>> hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ ls
+hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtにこんにちは、世界と追記"
+[main f03c5d1] hello_world.txtにこんにちは、世界と追記
+ 1 file changed, 1 insertion(+)
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$ git log --oneline
+f03c5d1 (HEAD -> main) hello_world.txtにこんにちは、世界と追記
+a062a7e hello_world.txtにHello,wordを追加
+
+iplay@Chida_Ryusei MINGW64 ~/git_challenge (main)
+$
